@@ -1,0 +1,34 @@
+Dataset Preview:
+   ticket_id           created_at                                   message
+0          1  2025-12-10 00:05:33            My payment was deducted twice.
+1          2  2026-01-05 03:05:33             I cannot login to my account.
+2          3  2025-12-07 07:05:33       Where is my delivery? It's delayed!
+3          4  2025-12-27 02:05:33     I need a refund for a faulty product.
+4          5  2025-12-16 13:05:33  The app keeps crashing after the update.
+
+Final Processed Data:
+   ticket_id                                   message issue_type priority  \
+0          1            My payment was deducted twice.    PAYMENT       P0   
+1          2             I cannot login to my account.      LOGIN       P3   
+2          3       Where is my delivery? It's delayed!   DELIVERY       P1   
+3          4     I need a refund for a faulty product.     REFUND       P1   
+4          5  The app keeps crashing after the update.        BUG       P0   
+5          6               How do I reset my password?    GENERAL       P2   
+6          7             My order has not arrived yet.    GENERAL       P3   
+7          8        I was charged an incorrect amount.    GENERAL       P3   
+8          9             Bug found in the new feature.        BUG       P3   
+9         10            General inquiry about service.    GENERAL       P3   
+
+   sla_hours          created_at            due_time  
+0          2 2025-12-10 00:05:33 2025-12-10 02:05:33  
+1         24 2026-01-05 03:05:33 2026-01-06 03:05:33  
+2          6 2025-12-07 07:05:33 2025-12-07 13:05:33  
+3          6 2025-12-27 02:05:33 2025-12-27 08:05:33  
+4          2 2025-12-16 13:05:33 2025-12-16 15:05:33  
+5         12 2025-12-14 22:05:33 2025-12-15 10:05:33  
+6         24 2025-12-19 23:05:33 2025-12-20 23:05:33  
+7         24 2026-01-01 14:05:33 2026-01-02 14:05:33  
+8         24 2025-12-12 12:05:33 2025-12-13 12:05:33  
+9         24 2026-01-03 00:05:33 2026-01-04 00:05:33  
+
+✅ Output CSV Generated Successfully!
